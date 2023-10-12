@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div class="Navbar">
+      <div class="leftBar">
+        <div class="menu">
+          <img class="menu-img" src="./images/icon-menu.svg" alt="" />
+        </div>
+        <h1>Sneakers</h1>
+        <ul class="nav">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+          <img class="close-menu" src="./images/icon-close.svg" alt="" />
+        </ul>
+      </div>
+      <div class="rightBar">
+        <div class="cart">
+          <img class="cartimg" src="./images/icon-cart.svg" alt="" />
+          <p class="counts" style="display: none">0</p>
+          <div class="cartdrop" style="display: none">
+            <div class="cart-container">
+              <div class="cartheader"><p>Cart</p></div>
+              <div class="cartInfo">
+                <div class="product">
+                  <div class="productInfo">
+                    <p class="prdctTitle">Your Cart is Empty</p>
+                    <div class="productPrice" style="display: none">
+                      <p class="idvPrice"></p>
+                      <p class="total"></p>
+                    </div>
+                  </div>
+                  <div class="rem"></div>
+                </div>
+                <div class="checkout"><button>Checkout</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile">
+          <img src="./images/image-avatar.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="modal">
+        <div class="modal-content-div">
+          <img id="img1" alt="" class="modal-content" />
+          <div class="next"><img src="./images/icon-next.svg" alt="" /></div>
+          <div class="prev">
+            <img src="./images/icon-previous.svg" alt="" />
+          </div>
+          <span class="close">&times;</span>
+        </div>
+
+        <div class="modal-img-display">
+          <div class="modal-img one">
+            <img
+              class="modal-imageone"
+              src="./images/image-product-1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="modal-img two">
+            <img
+              class="modal-imagetwo"
+              src="./images/image-product-2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="modal-img three">
+            <img
+              class="modal-imagethree"
+              src="./images/image-product-3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="modal-img four">
+            <img
+              class="modal-imagefour"
+              src="./images/image-product-4.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="product-image">
+        <div class="clicked-image">
+          <img
+            class="image-clicked"
+            src="./images/image-product-1.jpg"
+            alt="clicked image"
+          />
+          <div class="next-display">
+            <img src="./images/icon-next.svg" alt="next" class="img-next" />
+          </div>
+          <div class="prev-display">
+            <img src="./images/icon-previous.svg" alt="prev" class="img-prev" />
+          </div>
+        </div>
+
+        <div class="product-display">
+          <div class="img one">
+            <img
+              class="imageone"
+              src="./images/image-product-1.jpg"
+              id="img01"
+              alt=""
+            />
+          </div>
+          <div class="img two">
+            <img
+              class="imagetwo"
+              src="./images/image-product-2.jpg"
+              alt="product2"
+            />
+          </div>
+          <div class="img three">
+            <img
+              class="imagethree"
+              src="./images/image-product-3.jpg"
+              alt="product3"
+            />
+          </div>
+          <div class="img four">
+            <img
+              class="imagefour"
+              src="./images/image-product-4.jpg"
+              alt="product4"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="discription">
+        <div class="company">SNEAKER COMPANY</div>
+        <div class="product-title"><p>Fall Limited Edition Sneakers</p></div>
+        <div class="product-discription">
+          <p class="product-desk">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+        <div class="price">
+          <div class="withdiscount">
+            <p class="distprice">$<span class="disprice">125.00</span></p>
+            <div class="discount">50%</div>
+          </div>
+          <div class="actual-price">$250.00</div>
+        </div>
+        <div class="addtoCart">
+          <div class="howmany">
+            <img class="decrease" src="./images/icon-minus.svg" alt="minus" />
+            <p class="output">0</p>
+            <img class="increase" src="./images/icon-plus.svg" alt="plus" />
+          </div>
+          <div class="add">
+            <button class="addbtn">
+              <img src="./images/icon-cart.svg" alt="" />
+              <p>Add to cart</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/script/cart.js"></script>
+  </body>
+</html>
