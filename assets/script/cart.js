@@ -108,8 +108,8 @@ let quantity = 0;
 selector("increase").addEventListener("click", () => {
   quantity++;
 
-  selector("disprice").innerHTML = `${quantity}`;
-  const output = Number(selector("output").innerHTML);
+  selector("output").innerHTML = `${quantity}`;
+  const output = Number(selector("disprice").innerHTML);
 
   if (selector("prdctTitle").innerHTML === "Your Cart is Empty") {
     selector("productPrice").style.display = "none";
